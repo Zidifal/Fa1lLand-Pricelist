@@ -1,0 +1,68 @@
+{
+  "total": 7,
+  "viewers": [
+    {
+      "username": "fa1lland",
+      "karma": 179.3,
+      "coins": 9875176,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "468024994"
+      }
+    },
+    {
+      "username": "rein_zero_",
+      "karma": 200.0,
+      "coins": 73783,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "1513859144"
+      }
+    },
+    {
+      "username": "baka_ruvi",
+      "karma": 0.0,
+      "coins": 605057,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "793167213"
+      }
+    },
+    {
+      "username": "newelz",
+      "karma": 8.5,
+      "coins": 0,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "99556646"
+      }
+    },
+    {
+      "username": "streamelements",
+      "karma": 100.0,
+      "coins": 568,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "100135110"
+      }
+    },
+    {
+      "username": "nightbot",
+      "karma": 100.0,
+      "coins": 316,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "19264788"
+      }
+    },
+    {
+      "username": "shizik_f",
+      "karma": 110.0,
+      "coins": 49999044,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "1376538006"
+      }
+    }
+  ]
+}
