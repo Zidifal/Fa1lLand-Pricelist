@@ -6,7 +6,7 @@
     "SupportsCost": false,
     "PermissionLevel": "moderator",
     "RequiresConfirmation": false,
-    "CommandAlias": "",
+    "CommandAlias": "датьмонеток",
     "useCommandCooldown": true,
     "MaxUsesPerCooldownPeriod": 0,
     "AllowedRaidTypes": [],
@@ -23,7 +23,7 @@
     "SupportsCost": false,
     "PermissionLevel": "moderator",
     "RequiresConfirmation": false,
-    "CommandAlias": "",
+    "CommandAlias": "датькарму",
     "useCommandCooldown": true,
     "MaxUsesPerCooldownPeriod": 0,
     "AllowedRaidTypes": [],
@@ -558,7 +558,7 @@
     "DefaultLootBoxSize": 1,
     "MinLootBoxSize": 1,
     "MaxLootBoxSize": 10,
-    "CustomData": "{\"defaultMilitaryAidWager\":\"300\",\"minMilitaryAidWager\":\"50\",\"maxMilitaryAidWager\":\"1500\"}"
+    "CustomData": "{\"defaultMilitaryAidWager\":\"2000\",\"minMilitaryAidWager\":\"100\",\"maxMilitaryAidWager\":\"6000\"}"
   },
   "raid": {
     "Enabled": true,
@@ -570,12 +570,23 @@
     "CommandAlias": "рейд",
     "useCommandCooldown": false,
     "MaxUsesPerCooldownPeriod": 0,
-    "AllowedRaidTypes": [],
+    "AllowedRaidTypes": [
+      "standard",
+      "drop",
+      "dropcenter",
+      "dropchaos",
+      "dropedge",
+      "dropgroups",
+      "mech",
+      "mechcluster",
+      "water",
+      "wateredge"
+    ],
     "AllowedRaidStrategies": [],
     "DefaultLootBoxSize": 1,
     "MinLootBoxSize": 1,
     "MaxLootBoxSize": 10,
-    "CustomData": "{\"defaultRaidWager\":\"500\",\"minRaidWager\":\"100\",\"maxRaidWager\":\"2500\"}"
+    "CustomData": "{\"defaultRaidWager\":\"3500\",\"minRaidWager\":\"1500\",\"maxRaidWager\":\"10000\"}"
   },
   "raidinfo": {
     "Enabled": true,
@@ -1222,5 +1233,22 @@
     "MinLootBoxSize": 1,
     "MaxLootBoxSize": 10,
     "CustomData": ""
+  },
+  "rescueme": {
+    "Enabled": true,
+    "CooldownSeconds": 0,
+    "Cost": 0,
+    "SupportsCost": false,
+    "PermissionLevel": "subscriber",
+    "RequiresConfirmation": false,
+    "CommandAlias": "",
+    "useCommandCooldown": true,
+    "MaxUsesPerCooldownPeriod": 0,
+    "AllowedRaidTypes": [],
+    "AllowedRaidStrategies": [],
+    "DefaultLootBoxSize": 1,
+    "MinLootBoxSize": 1,
+    "MaxLootBoxSize": 10,
+    "CustomData": "{\"leftBehindCost\":\"400\",\"capturedCost\":\"800\"}"
   }
 }

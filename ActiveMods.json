@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-11T15:37:01.3876225Z",
-  "totalActiveMods": 256,
+  "exportedAt": "2026-07-18T06:59:31.2951578Z",
+  "totalActiveMods": 263,
   "mods": [
     {
       "author": "Captolamia",
@@ -201,6 +201,18 @@
       "version": null
     },
     {
+      "author": "jaeger972",
+      "name": "Faction Territories and Vassalage",
+      "steamId": "3626725895",
+      "version": null
+    },
+    {
+      "author": "Sause Walka",
+      "name": "Faction Territories and Vassalage | Rus",
+      "steamId": "3646957936",
+      "version": null
+    },
+    {
       "author": "ChaoticEnrico",
       "name": "Fog Color Changer",
       "steamId": "3492647454",
@@ -228,6 +240,12 @@
       "author": "AOBA",
       "name": "Fortified Features Framework",
       "steamId": "3498575851",
+      "version": null
+    },
+    {
+      "author": "Matvey24",
+      "name": "FPS Stabilizer",
+      "steamId": "3318922522",
       "version": null
     },
     {
@@ -276,6 +294,12 @@
       "author": "Zylle",
       "name": "Map Designer",
       "steamId": "2111424996",
+      "version": null
+    },
+    {
+      "author": "カタストロフ/NozoMe",
+      "name": "Map Mode Framework",
+      "steamId": "3296654393",
       "version": null
     },
     {
@@ -354,7 +378,7 @@
       "author": "Hatti, pkp24",
       "name": "QualityBuilder Unofficial 1.6",
       "steamId": "3512466087",
-      "version": null
+      "version": "1.6.012"
     },
     {
       "author": "The White Crayon (Updated for 1.1 by Ogliss)",
@@ -396,6 +420,12 @@
       "author": "Nevelian",
       "name": "Rim War it pr ge fr sp jp th ua ru",
       "steamId": "2645763762",
+      "version": null
+    },
+    {
+      "author": "Cabbage",
+      "name": "RimCities",
+      "steamId": "1775170117",
       "version": null
     },
     {
@@ -708,7 +738,7 @@
       "author": "OliveWizard",
       "name": "Vanilla Events Expanded Russian Language Pack",
       "steamId": "2141736447",
-      "version": null
+      "version": "16.01"
     },
     {
       "author": "Oskar Potocki,  XeoNovaDan,  Orion,  Kikohi,  Taranchuk,  Sarg Bjornson,  Erdelf",
@@ -1509,6 +1539,12 @@
       "version": null
     },
     {
+      "author": "TSA",
+      "name": "World Domination",
+      "steamId": "3646291383",
+      "version": null
+    },
+    {
       "author": "Imranfish",
       "name": "XML Extensions",
       "steamId": "2574315206",
@@ -1530,6 +1566,12 @@
       "author": "Cas",
       "name": "Русификатор Vanilla Psycasts Expanded",
       "steamId": "3532584557",
+      "version": null
+    },
+    {
+      "author": "Bot_Kerebs",
+      "name": "Русский перевод - World Domination",
+      "steamId": "3681789715",
       "version": null
     },
     {

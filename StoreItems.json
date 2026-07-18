@@ -57,7 +57,7 @@
       "Mod": "Core",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Wort": {
@@ -87,7 +87,7 @@
       "Mod": "Core",
       "BasePrice": 15,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GoJuice": {
@@ -102,7 +102,7 @@
       "Mod": "Core",
       "BasePrice": 53,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Luciferium": {
@@ -117,7 +117,7 @@
       "Mod": "Core",
       "BasePrice": 70,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Penoxycyline": {
@@ -132,7 +132,7 @@
       "Mod": "Core",
       "BasePrice": 18,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Flake": {
@@ -147,7 +147,7 @@
       "Mod": "Core",
       "BasePrice": 14,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "PsychiteTea": {
@@ -162,7 +162,7 @@
       "Mod": "Core",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Yayo": {
@@ -177,7 +177,7 @@
       "Mod": "Core",
       "BasePrice": 21,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "SmokeleafJoint": {
@@ -192,7 +192,7 @@
       "Mod": "Core",
       "BasePrice": 11,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "WakeUp": {
@@ -207,7 +207,7 @@
       "Mod": "Core",
       "BasePrice": 35,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "PsychicAmplifier": {
@@ -2509,7 +2509,7 @@
       "DefName": "Steel",
       "CustomName": "Сталь",
       "HasQuantityLimit": true,
-      "QuantityLimit": 75,
+      "QuantityLimit": 500,
       "LimitMode": "OneStack",
       "IsUsable": false,
       "IsEquippable": false,
@@ -9357,7 +9357,7 @@
       "Mod": "Anomaly",
       "BasePrice": 60,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "MetalbloodSerum": {
@@ -9372,7 +9372,7 @@
       "Mod": "Anomaly",
       "BasePrice": 200,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "JuggernautSerum": {
@@ -9387,7 +9387,7 @@
       "Mod": "Anomaly",
       "BasePrice": 200,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "MindNumbSerum": {
@@ -9402,7 +9402,7 @@
       "Mod": "Anomaly",
       "BasePrice": 80,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Bioferrite": {
@@ -9717,7 +9717,7 @@
       "Mod": "Odyssey",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "BloodWarmer": {
@@ -10882,12 +10882,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 8170,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_BoltActionRifle_Unique": {
@@ -10897,12 +10897,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 8490,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_ChainShotgun_Unique": {
@@ -10912,12 +10912,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 8875,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_HeavySMG_Unique": {
@@ -10927,12 +10927,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 9150,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_LMG_Unique": {
@@ -10942,12 +10942,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 9675,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_AssaultRifle_Unique": {
@@ -10957,12 +10957,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 9425,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_SniperRifle_Unique": {
@@ -10972,12 +10972,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 9575,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_Minigun_Unique": {
@@ -10987,12 +10987,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 11250,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Bow_Great_Unique": {
@@ -11002,12 +11002,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 7900,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_ChargeRifle_Unique": {
@@ -11017,12 +11017,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 11700,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_ChargeLance_Unique": {
@@ -11032,12 +11032,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 14500,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_HellcatRifle_Unique": {
@@ -11047,12 +11047,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 9975,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Gun_BeamRepeater_Unique": {
@@ -11062,12 +11062,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Odyssey",
       "BasePrice": 16300,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "Apparel_VacsuitHelmet": {
@@ -29757,7 +29757,7 @@
       "Mod": "Vanilla Cooking Expanded",
       "BasePrice": 15,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_FineDessert": {
@@ -29772,7 +29772,7 @@
       "Mod": "Vanilla Cooking Expanded",
       "BasePrice": 20,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_LavishDessert": {
@@ -29787,7 +29787,7 @@
       "Mod": "Vanilla Cooking Expanded",
       "BasePrice": 40,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_GourmetDessert": {
@@ -29802,7 +29802,7 @@
       "Mod": "Vanilla Cooking Expanded",
       "BasePrice": 75,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_MealGourmet": {
@@ -33822,7 +33822,7 @@
       "Mod": "Vanilla Factions Expanded - Settlers",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "ChemBoiler": {
@@ -34167,7 +34167,7 @@
       "Mod": "Vanilla Factions Expanded - Empire",
       "BasePrice": 16,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VFEE_RoyalSculptureSmall": {
@@ -53847,7 +53847,7 @@
       "Mod": "Vanilla Factions Expanded - Insectoids 2",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VFEI2_SmallBurrow": {
@@ -62922,7 +62922,7 @@
       "Mod": "Vanilla Weapons Expanded - Laser",
       "BasePrice": 1,
       "Category": "Незаконченные",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWEL_LaserSword": {
@@ -63832,12 +63832,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8120,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Bow_Long_Unique": {
@@ -63847,12 +63847,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8100,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Bow_Compound_Unique": {
@@ -63862,12 +63862,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8255,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_HandCannon_Unique": {
@@ -63877,12 +63877,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8335,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_CombatHandgun_Unique": {
@@ -63892,12 +63892,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8525,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_SawedOffShotgun_Unique": {
@@ -63907,12 +63907,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8625,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_SemiAutomaticRifle_Unique": {
@@ -63922,12 +63922,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8825,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_LeverActionRifle_Unique": {
@@ -63937,12 +63937,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8600,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_TrenchGun_Unique": {
@@ -63952,12 +63952,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 9100,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_LightSMG_Unique": {
@@ -63967,12 +63967,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8700,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_SMG_Unique": {
@@ -63982,12 +63982,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 8875,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_HMG_Unique": {
@@ -63997,12 +63997,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 10625,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ServiceRifle_Unique": {
@@ -64012,12 +64012,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 9350,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_BattleRifle_Unique": {
@@ -64027,12 +64027,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 10150,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_Carbine_Unique": {
@@ -64042,12 +64042,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 9900,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_MarksmanRifle_Unique": {
@@ -64057,12 +64057,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 9825,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_AntiMaterialRifle_Unique": {
@@ -64072,12 +64072,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 12100,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargePistol_Unique": {
@@ -64087,12 +64087,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 10400,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargeShotgun_Unique": {
@@ -64102,12 +64102,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 12550,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargeSMG_Unique": {
@@ -64117,12 +64117,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 11475,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargeLMG_Unique": {
@@ -64132,12 +64132,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 19525,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargeMinigun_Unique": {
@@ -64147,12 +64147,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 25600,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_ChargeSniperRifle_Unique": {
@@ -64162,12 +64162,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded",
       "BasePrice": 21250,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_SmokeGrenade": {
@@ -64747,12 +64747,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Quickdraw",
       "BasePrice": 8550,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_BullpupRifle_Unique": {
@@ -64762,12 +64762,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Quickdraw",
       "BasePrice": 10675,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_BullpupDMR_Unique": {
@@ -64777,12 +64777,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Quickdraw",
       "BasePrice": 11125,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_PDW_Unique": {
@@ -64792,12 +64792,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Quickdraw",
       "BasePrice": 9375,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_AutomaticPistol": {
@@ -65002,12 +65002,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Coilguns",
       "BasePrice": 13550,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_GaussMagnum_Unique": {
@@ -65017,12 +65017,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Coilguns",
       "BasePrice": 10950,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_GaussLance_Unique": {
@@ -65032,12 +65032,12 @@
       "QuantityLimit": 1,
       "LimitMode": "OneStack",
       "IsUsable": false,
-      "IsEquippable": true,
+      "IsEquippable": false,
       "IsWearable": false,
       "Mod": "Vanilla Weapons Expanded - Coilguns",
       "BasePrice": 23400,
       "Category": "Weapon",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VWE_Gun_GaussRifle": {
@@ -67557,7 +67557,7 @@
       "Mod": "Vanilla Factions Expanded - Pirates",
       "BasePrice": 6,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VFEP_Apparel_Privateer": {
@@ -68337,7 +68337,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_FeatherdustJoint": {
@@ -68352,7 +68352,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_PoisonAmpoule": {
@@ -68367,7 +68367,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 60,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_HugeBearCatRug": {
@@ -69327,7 +69327,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 7,
       "Category": "Разное",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_RandomExcavator": {
@@ -69342,7 +69342,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 7,
       "Category": "Разное",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_RandomGenoframe": {
@@ -69357,7 +69357,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 7,
       "Category": "Разное",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_RandomGenome": {
@@ -69372,7 +69372,7 @@
       "Mod": "Vanilla Genetics Expanded",
       "BasePrice": 7,
       "Category": "Разное",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_Ruined_Mechahybridizer": {
@@ -73767,7 +73767,7 @@
       "Mod": "Vanilla Christmas Expanded",
       "BasePrice": 15,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_FestivityBaby": {
@@ -74742,7 +74742,7 @@
       "Mod": "Vanilla Races Expanded - Genie",
       "BasePrice": 18,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VRE_AncientAstrosuit": {
@@ -77802,7 +77802,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_LuciferiumPowder": {
@@ -77967,7 +77967,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 600,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Gin": {
@@ -77982,7 +77982,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Tequila": {
@@ -77997,7 +77997,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 15,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Vodka": {
@@ -78012,7 +78012,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Whiskey": {
@@ -78027,7 +78027,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 30,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_DoubleWhiskey": {
@@ -78042,7 +78042,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 60,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_HotCoffee": {
@@ -78057,7 +78057,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_IceCoffee": {
@@ -78072,7 +78072,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 9,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_EnergyDrink": {
@@ -78087,7 +78087,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 13,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Juice": {
@@ -78117,7 +78117,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Tea": {
@@ -78132,7 +78132,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_SimpleCocktail": {
@@ -78147,7 +78147,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 15,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_FineCocktail": {
@@ -78162,7 +78162,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 20,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_LavishCocktail": {
@@ -78177,7 +78177,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 40,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_GourmetCocktail": {
@@ -78192,7 +78192,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 75,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_SodaSyrup": {
@@ -78357,7 +78357,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Cigars": {
@@ -78372,7 +78372,7 @@
       "Mod": "Vanilla Brewing Expanded",
       "BasePrice": 60,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_DalgonaCoffee": {
@@ -78387,7 +78387,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 14,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_GreenTea": {
@@ -78402,7 +78402,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 14,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_MasalaChai": {
@@ -78417,7 +78417,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_MintCoffee": {
@@ -78432,7 +78432,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_MintTea": {
@@ -78447,7 +78447,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_NoonChai": {
@@ -78462,7 +78462,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_MintLeaves": {
@@ -78492,7 +78492,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_LemonCoffee": {
@@ -78507,7 +78507,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Lemonade": {
@@ -78522,7 +78522,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 3,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_LemonTea": {
@@ -78537,7 +78537,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VCE_RawLemon": {
@@ -78582,7 +78582,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 11,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_CannibalCoffee": {
@@ -78597,7 +78597,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_IrishCoffee": {
@@ -78612,7 +78612,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 25,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Kombucha": {
@@ -78627,7 +78627,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_LatteCoffee": {
@@ -78642,7 +78642,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 12,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_MochaCoffee": {
@@ -78657,7 +78657,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 10,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_PumpkinCoffee": {
@@ -78672,7 +78672,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 4,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_Yuenyeung": {
@@ -78687,7 +78687,7 @@
       "Mod": "Vanilla Brewing Expanded - Coffees and Teas",
       "BasePrice": 8,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "VBE_WritersTable": {
@@ -87252,7 +87252,7 @@
       "Mod": "Vanilla Genetics Expanded - More Lab Stuff",
       "BasePrice": 60,
       "Category": "Drugs",
-      "Enabled": true,
+      "Enabled": false,
       "modactive": true
     },
     "GR_GenetrainerBench": {
@@ -89127,6 +89127,81 @@
       "Mod": "Vanilla Psycasts Expanded - Puppeteer",
       "BasePrice": 2000,
       "Category": "Пси-тренеры",
+      "Enabled": true,
+      "modactive": true
+    },
+    "VEE_Shuttle_Combat": {
+      "DefName": "VEE_Shuttle_Combat",
+      "CustomName": "Crashed shuttle",
+      "HasQuantityLimit": true,
+      "QuantityLimit": 1,
+      "LimitMode": "OneStack",
+      "IsUsable": false,
+      "IsEquippable": false,
+      "IsWearable": false,
+      "Mod": "Vanilla Events Expanded",
+      "BasePrice": 3365,
+      "Category": "Разное",
+      "Enabled": true,
+      "modactive": true
+    },
+    "VEE_Shuttle_Heavy": {
+      "DefName": "VEE_Shuttle_Heavy",
+      "CustomName": "Crashed shuttle",
+      "HasQuantityLimit": true,
+      "QuantityLimit": 1,
+      "LimitMode": "OneStack",
+      "IsUsable": false,
+      "IsEquippable": false,
+      "IsWearable": false,
+      "Mod": "Vanilla Events Expanded",
+      "BasePrice": 3365,
+      "Category": "Разное",
+      "Enabled": true,
+      "modactive": true
+    },
+    "VEE_ShipChunkHuman_Volatile_Spawner": {
+      "DefName": "VEE_ShipChunkHuman_Volatile_Spawner",
+      "CustomName": "Orbital ship chunk",
+      "HasQuantityLimit": true,
+      "QuantityLimit": 1,
+      "LimitMode": "OneStack",
+      "IsUsable": false,
+      "IsEquippable": false,
+      "IsWearable": false,
+      "Mod": "Vanilla Events Expanded",
+      "BasePrice": 295,
+      "Category": "Разное",
+      "Enabled": true,
+      "modactive": true
+    },
+    "VEE_ShipChunkHuman_Cargo": {
+      "DefName": "VEE_ShipChunkHuman_Cargo",
+      "CustomName": "Orbital ship chunk",
+      "HasQuantityLimit": true,
+      "QuantityLimit": 1,
+      "LimitMode": "OneStack",
+      "IsUsable": false,
+      "IsEquippable": false,
+      "IsWearable": false,
+      "Mod": "Vanilla Events Expanded",
+      "BasePrice": 295,
+      "Category": "Разное",
+      "Enabled": true,
+      "modactive": true
+    },
+    "VEE_ShipChunkHuman_DropPod_Spawner": {
+      "DefName": "VEE_ShipChunkHuman_DropPod_Spawner",
+      "CustomName": "Orbital ship chunk",
+      "HasQuantityLimit": true,
+      "QuantityLimit": 1,
+      "LimitMode": "OneStack",
+      "IsUsable": false,
+      "IsEquippable": false,
+      "IsWearable": false,
+      "Mod": "Vanilla Events Expanded",
+      "BasePrice": 295,
+      "Category": "Разное",
       "Enabled": true,
       "modactive": true
     }

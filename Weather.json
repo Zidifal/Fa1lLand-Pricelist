@@ -198,7 +198,7 @@
     "BaseCost": 300,
     "KarmaType": "Bad",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Psycasts Expanded",
     "modactive": true,
     "Version": 1
@@ -210,7 +210,7 @@
     "BaseCost": 600,
     "KarmaType": "Doom",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Psycasts Expanded - Hemosage",
     "modactive": true,
     "Version": 1
@@ -222,7 +222,7 @@
     "BaseCost": 150,
     "KarmaType": "Neutral",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Furniture Expanded - Power",
     "modactive": true,
     "Version": 1
@@ -246,7 +246,7 @@
     "BaseCost": 300,
     "KarmaType": "Bad",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Races Expanded - Archon",
     "modactive": true,
     "Version": 1
@@ -282,7 +282,7 @@
     "BaseCost": 150,
     "KarmaType": "Neutral",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Landmarks Expanded",
     "modactive": true,
     "Version": 1
@@ -294,7 +294,7 @@
     "BaseCost": 300,
     "KarmaType": "Bad",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Landmarks Expanded",
     "modactive": true,
     "Version": 1
@@ -306,7 +306,7 @@
     "BaseCost": 175,
     "KarmaType": "Neutral",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Gravship Expanded - Chapter 1",
     "modactive": true,
     "Version": 1
@@ -318,8 +318,68 @@
     "BaseCost": 600,
     "KarmaType": "Doom",
     "EventCap": 3,
-    "Enabled": true,
+    "Enabled": false,
     "ModSource": "Vanilla Gravship Expanded - Chapter 1",
+    "modactive": true,
+    "Version": 1
+  },
+  "VEE_Whiteout": {
+    "DefName": "VEE_Whiteout",
+    "Label": "whiteout",
+    "Description": "Heavy, chilling snow that severely reduces the accuracy of ranged weapons, extinguishes fire and slows people down.",
+    "BaseCost": 175,
+    "KarmaType": "Neutral",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "Vanilla Events Expanded",
+    "modactive": true,
+    "Version": 1
+  },
+  "VEE_Swelter": {
+    "DefName": "VEE_Swelter",
+    "Label": "swelter",
+    "Description": "An unnatural, oppressive heat.",
+    "BaseCost": 175,
+    "KarmaType": "Neutral",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "Vanilla Events Expanded",
+    "modactive": true,
+    "Version": 1
+  },
+  "VEE_Inferno": {
+    "DefName": "VEE_Inferno",
+    "Label": "inferno",
+    "Description": "A catastrophic, unnatural, oppressive heat.",
+    "BaseCost": 175,
+    "KarmaType": "Neutral",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "Vanilla Events Expanded",
+    "modactive": true,
+    "Version": 1
+  },
+  "VEE_PsychicRain": {
+    "DefName": "VEE_PsychicRain",
+    "Label": "psychic rain",
+    "Description": "A seemingly supernatural rain that alters the very composition of time. Any person or creature not under a roof will age significantly faster.",
+    "BaseCost": 150,
+    "KarmaType": "Neutral",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "Vanilla Events Expanded",
+    "modactive": true,
+    "Version": 1
+  },
+  "VEE_LongNight": {
+    "DefName": "VEE_LongNight",
+    "Label": "long night",
+    "Description": "A catastrophic celestial eclipse that blankets the world in an endless, freezing twilight, forcing the world to adapt to artificial light and increased psychic sensitivity as nocturnal predators and subterranean threats emerge in the darkness.",
+    "BaseCost": 175,
+    "KarmaType": "Neutral",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "Vanilla Events Expanded",
     "modactive": true,
     "Version": 1
   }
