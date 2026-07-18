@@ -3,150 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fa1lLand Store - Purchase List</title>
+    <title>Fa1lLand Store — RimWorld Cyberpunk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/rics-store.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-			<!-- PUT YOUR NAME HERE -->
-            <h1>Fa1lLand Store</h1>
-			<!-- Change TExt here to anything you like -->
-            <p>Interactive purchase list for Fa1lLand mod</p>
-        </header>
 
-        <div class="tabs">
-            <button class="tab-button active" data-tab="items">Items</button>
-            <button class="tab-button" data-tab="events">Events</button>
-            <button class="tab-button" data-tab="weather">Weather</button>
-            <button class="tab-button" data-tab="traits">Traits</button>
-            <button class="tab-button" data-tab="races">Races</button>
-			<button class="tab-button" data-tab="mods">Mods</button>
-        </div>
+<div class="scanlines"></div>
+<div class="particles" id="particles"></div>
 
-        <div class="tab-content">
-            <!-- Items Tab -->
-            <div id="items" class="tab-pane active">
+<div class="container">
+
+    <!-- ═══ HEADER ═══ -->
+    <header>
+        <div class="header-top-line"></div>
+        <div class="header-glitch" data-text="FA1LLAND">FA1LLAND</div>
+        <h1>
+            <span class="neon-text">STORE</span>
+            <span class="version-badge">v2.0</span>
+        </h1>
+        <p class="header-sub">
+            <span class="blink">▶</span> Interactive RimWorld Mod Database
+            <span class="header-sep">│</span>
+            <span class="online-dot"></span> SYSTEM ONLINE
+        </p>
+        <div class="header-stats" id="header-stats"></div>
+    </header>
+
+    <!-- ═══ TABS ═══ -->
+    <nav class="tabs">
+        <button class="tab-button active" data-tab="items">
+            <span class="tab-icon">📦</span>
+            <span class="tab-label">Items</span>
+            <span class="tab-count" id="count-items">0</span>
+        </button>
+        <button class="tab-button" data-tab="events">
+            <span class="tab-icon">⚡</span>
+            <span class="tab-label">Events</span>
+            <span class="tab-count" id="count-events">0</span>
+        </button>
+        <button class="tab-button" data-tab="weather">
+            <span class="tab-icon">🌩️</span>
+            <span class="tab-label">Weather</span>
+            <span class="tab-count" id="count-weather">0</span>
+        </button>
+        <button class="tab-button" data-tab="traits">
+            <span class="tab-icon">🧬</span>
+            <span class="tab-label">Traits</span>
+            <span class="tab-count" id="count-traits">0</span>
+        </button>
+        <button class="tab-button" data-tab="races">
+            <span class="tab-icon">👽</span>
+            <span class="tab-label">Races</span>
+            <span class="tab-count" id="count-races">0</span>
+        </button>
+        <button class="tab-button" data-tab="mods">
+            <span class="tab-icon">🔧</span>
+            <span class="tab-label">Mods</span>
+            <span class="tab-count" id="count-mods">0</span>
+        </button>
+    </nav>
+
+    <!-- ═══ CONTENT ═══ -->
+    <main class="tab-content">
+
+        <!-- ITEMS -->
+        <section id="items" class="tab-pane active">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">📦</span> Item Database</h2>
                 <div class="search-box">
-                    <input type="text" id="items-search" placeholder="Search items..." class="search-input">
-                </div>
-                <div class="table-container">
-                    <table id="items-table" class="items-table">
-                        <thead>
-                            <tr>
-                                <th data-sort="name">Name</th>
-                                <th data-sort="price">Price</th>
-                                <th data-sort="category">Category</th>
-                                <th data-sort="quantityLimit">Quantity Limit</th>
-                            </tr>
-                        </thead>
-                        <tbody id="items-tbody">
-                            <!-- Items loaded by JavaScript -->
-                        </tbody>
-                    </table>
+                    <span class="search-icon">⌕</span>
+                    <input type="text" id="items-search" placeholder="Search items by name, category, defName..." class="search-input">
                 </div>
             </div>
+            <div class="table-container">
+                <table class="data-table" id="items-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name</th>
+                            <th data-sort="price">Price</th>
+                            <th data-sort="category">Category</th>
+                            <th data-sort="quantityLimit">Qty Limit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-tbody"></tbody>
+                </table>
+            </div>
+        </section>
 
-            <!-- Events Tab -->
-            <div id="events" class="tab-pane">
+        <!-- EVENTS -->
+        <section id="events" class="tab-pane">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">⚡</span> Event List</h2>
                 <div class="search-box">
+                    <span class="search-icon">⌕</span>
                     <input type="text" id="events-search" placeholder="Search events..." class="search-input">
                 </div>
-                <div class="table-container">
-                    <table id="events-table" class="items-table">
-                        <thead>
-                            <tr>
-                                <th data-sort="label">Name</th>
-                                <th data-sort="baseCost">Cost</th>
-                                <th data-sort="karmaType">Karma Type</th>
-                            </tr>
-                        </thead>
-                        <tbody id="events-tbody">
-                            <!-- Events loaded by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
             </div>
+            <div class="table-container">
+                <table class="data-table" id="events-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="label">Name</th>
+                            <th data-sort="baseCost">Cost</th>
+                            <th data-sort="karmaType">Karma</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-tbody"></tbody>
+                </table>
+            </div>
+        </section>
 
-            <!-- Weather Tab -->
-            <div id="weather" class="tab-pane">
+        <!-- WEATHER -->
+        <section id="weather" class="tab-pane">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">🌩️</span> Weather Control</h2>
                 <div class="search-box">
+                    <span class="search-icon">⌕</span>
                     <input type="text" id="weather-search" placeholder="Search weather..." class="search-input">
                 </div>
-                <div class="table-container">
-                    <table id="weather-table" class="items-table">
-                        <thead>
-                            <tr>
-                                <th data-sort="label">Name</th>
-                                <th data-sort="baseCost">Cost</th>
-                                <th data-sort="karmaType">Karma Type</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody id="weather-tbody">
-                            <!-- Weather loaded by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
             </div>
-            <!-- Traits Tab -->
-            <div id="traits" class="tab-pane">
+            <div class="table-container">
+                <table class="data-table" id="weather-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="label">Name</th>
+                            <th data-sort="baseCost">Cost</th>
+                            <th data-sort="karmaType">Karma</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weather-tbody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TRAITS -->
+        <section id="traits" class="tab-pane">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">🧬</span> Trait Manipulator</h2>
                 <div class="search-box">
+                    <span class="search-icon">⌕</span>
                     <input type="text" id="traits-search" placeholder="Search traits..." class="search-input">
                 </div>
-                <div class="table-container">
-                    <table id="traits-table" class="items-table">
-                        <thead>
-                            <tr>
-                                <th data-sort="name">Name</th>
-                                <th data-sort="addPrice">Add Cost</th>
-                                <th data-sort="removePrice">Remove Cost</th>
-                                <th>Description & Details</th>
-                            </tr>
-                        </thead>
-                        <tbody id="traits-tbody">
-                            <!-- Traits loaded by JavaScript -->
-                        </tbody>
-                    </table>
+            </div>
+            <div class="table-container">
+                <table class="data-table" id="traits-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name</th>
+                            <th data-sort="addPrice">Add Cost</th>
+                            <th data-sort="removePrice">Remove Cost</th>
+                            <th>Description & Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="traits-tbody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- RACES -->
+        <section id="races" class="tab-pane">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">👽</span> Race & Xenotype Registry</h2>
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" id="races-search" placeholder="Search races and xenotypes..." class="search-input">
                 </div>
             </div>
+            <div class="races-container" id="races-container"></div>
+        </section>
 
-			<!-- Races Tab -->
-			<div id="races" class="tab-pane">
-				<div class="search-box">
-					<input type="text" id="races-search" placeholder="Search races and xenotypes..." class="search-input">
-				</div>
-				
-				<div id="races-container" class="races-container">
-					<!-- Populated by JavaScript with collapsible groups -->
-				</div>
-			</div>
-			<!-- Mods Tab -->
-            <div id="mods" class="tab-pane">
+        <!-- MODS -->
+        <section id="mods" class="tab-pane">
+            <div class="pane-header">
+                <h2 class="pane-title"><span class="title-icon">🔧</span> Active Mod List</h2>
                 <div class="search-box">
+                    <span class="search-icon">⌕</span>
                     <input type="text" id="mods-search" placeholder="Search mods..." class="search-input">
                 </div>
-                <div class="table-container">
-                    <table id="mods-table" class="items-table">
-                        <thead>
-                            <tr>
-                                <th data-sort="name">Mod Name</th>
-                                <th data-sort="author">Author</th>
-                                <th data-sort="version">Version</th>
-                                <th>Steam Workshop</th>
-                            </tr>
-                        </thead>
-                        <tbody id="mods-tbody">
-                            <!-- Mods loaded by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
             </div>
-		
-		</div>
-    </div>
+            <div class="table-container">
+                <table class="data-table" id="mods-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Mod Name</th>
+                            <th data-sort="author">Author</th>
+                            <th data-sort="version">Version</th>
+                            <th>Workshop</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mods-tbody"></tbody>
+                </table>
+            </div>
+        </section>
 
-    <script src="assets/js/rics-store.js"></script>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <span class="neon-text-sm">FA1LLAND</span> Store •
+        Powered by <a href="https://github.com/Zidifal/Fa1lLand-Pricelist" target="_blank" class="footer-link">GitHub</a>
+        • RimWorld Mod Database
+    </footer>
+
+</div>
+
+<script src="assets/js/rics-store.js"></script>
 </body>
-
 </html>
