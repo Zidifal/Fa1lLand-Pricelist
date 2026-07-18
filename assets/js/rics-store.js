@@ -1,6 +1,6 @@
 // assets/js/rics-store.js
 // FA1LLAND STORE — Cyberpunk RimWorld Edition
-// Based on original RICSStore class with full cyberpunk UI integration
+// With filter chips, sortable tables, neon glow, and full search
 
 class RICSStore {
     constructor() {
@@ -8,6 +8,8 @@ class RICSStore {
         this.filteredData = { items: [], events: [], traits: [], races: [], weather: [], mods: [] };
         this.currentSort = {};
         this.loadFailed = false;
+        this.activeFilters = { items: 'all', events: 'all', weather: 'all', traits: 'all' };
+        this.searchTerms = { items: '', events: '', weather: '', traits: '', races: '', mods: '' };
         this.init();
     }
 
@@ -17,6 +19,7 @@ class RICSStore {
         this.renderAllTabs();
         this.updateHeaderStats();
         this.updateTabCounts();
+        this.buildFilterChips();
         this.setupEventListeners();
     }
 
@@ -101,7 +104,7 @@ class RICSStore {
     }
 
     // ══════════════════════════════════════════════
-    //  PROCESSORS (unchanged logic from your original)
+    //  PROCESSORS
     // ══════════════════════════════════════════════
     convertRimWorldColors(text) {
         if (!text || typeof text !== 'string') return text;
@@ -515,6 +518,165 @@ class RICSStore {
     }
 
     // ══════════════════════════════════════════════
+    //  FILTER CHIPS
+    // ══════════════════════════════════════════════
+    buildFilterChips() {
+        // Config: which tabs get filter chips + which field to group by
+        const configs = [
+            { tab: 'items',   field: 'category',  containerId: 'items-filters'   },
+            { tab: 'events',  field: 'karmaType', containerId: 'events-filters'  },
+            { tab: 'weather', field: 'karmaType', containerId: 'weather-filters' },
+            { tab: 'traits',  field: 'modSource', containerId: 'traits-filters'  }
+        ];
+
+        configs.forEach(cfg => {
+            const container = document.getElementById(cfg.containerId);
+            if (!container) return;
+
+            // Count entries per category
+            const counts = {};
+            this.data[cfg.tab].forEach(entry => {
+                const val = entry[cfg.field] || 'Other';
+                counts[val] = (counts[val] || 0) + 1;
+            });
+
+            // Sort alphabetically
+            const sortedCategories = Object.keys(counts).sort((a, b) => a.localeCompare(b));
+
+            const totalCount = this.data[cfg.tab].length;
+            const activeFilter = this.activeFilters[cfg.tab] || 'all';
+
+            // Build HTML
+            let html = `
+                <button class="filter-chip ${activeFilter === 'all' ? 'active' : ''}"
+                        data-filter="all">
+                    ${this.getCategoryIcon('all')} All
+                    <span class="chip-count">${totalCount}</span>
+                </button>
+            `;
+
+            sortedCategories.forEach(cat => {
+                const isActive = activeFilter === cat;
+                html += `
+                    <button class="filter-chip ${isActive ? 'active' : ''}"
+                            data-filter="${this.safeEscape(cat)}">
+                        ${this.getCategoryIcon(cat)} ${this.safeEscape(cat)}
+                        <span class="chip-count">${counts[cat]}</span>
+                    </button>
+                `;
+            });
+
+            container.innerHTML = html;
+
+            // Bind clicks
+            container.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    this.activeFilters[cfg.tab] = chip.dataset.filter;
+                    container.querySelectorAll('.filter-chip').forEach(c =>
+                        c.classList.remove('active')
+                    );
+                    chip.classList.add('active');
+                    this.applyFilters(cfg.tab);
+                });
+            });
+        });
+    }
+
+    // ══════════════════════════════════════════════
+    //  CATEGORY ICONS
+    // ══════════════════════════════════════════════
+    getCategoryIcon(category) {
+        if (!category) return '📁';
+        const c = category.toLowerCase();
+        const icons = {
+            'all':         '⚡',
+            'weapons':     '⚔️',
+            'weapon':      '⚔️',
+            'apparel':     '🧥',
+            'clothing':    '👕',
+            'armor':       '🛡️',
+            'medicine':    '💊',
+            'medical':     '🩺',
+            'food':        '🍖',
+            'meals':       '🍽️',
+            'drugs':       '💊',
+            'books':       '📚',
+            'book':        '📖',
+            'resources':   '🪨',
+            'materials':   '🧱',
+            'building':    '🏗️',
+            'furniture':   '🛋️',
+            'tech':        '💻',
+            'technology':  '🔧',
+            'plants':      '🌱',
+            'animals':     '🐺',
+            'misc':        '📦',
+            'other':       '📁',
+            'ammo':        '🎯',
+            'grenades':    '💣',
+            'melee':       '🗡️',
+            'ranged':      '🔫',
+            'utility':     '🔨',
+            'consumables': '🧪',
+            'good karma':  '😇',
+            'bad karma':   '😈',
+            'doom':        '💀',
+            'neutral':     '⚖️',
+            'none':        '➖',
+            'core':        '⭐'
+        };
+        if (icons[c]) return icons[c];
+        for (const [k, v] of Object.entries(icons)) {
+            if (c.includes(k)) return v;
+        }
+        return '📁';
+    }
+
+    // ══════════════════════════════════════════════
+    //  APPLY COMBINED FILTERS (search + chip)
+    // ══════════════════════════════════════════════
+    applyFilters(tabName) {
+        const all = this.data[tabName] || [];
+        const search = (this.searchTerms[tabName] || '').toLowerCase().trim();
+        const activeFilter = this.activeFilters[tabName] || 'all';
+
+        const categoryField = {
+            items:   'category',
+            events:  'karmaType',
+            weather: 'karmaType',
+            traits:  'modSource'
+        }[tabName];
+
+        this.filteredData[tabName] = all.filter(item => {
+            // Chip filter
+            if (activeFilter !== 'all' && categoryField) {
+                const val = item[categoryField] || 'Other';
+                if (val !== activeFilter) return false;
+            }
+
+            // Search filter
+            if (search) {
+                const text = [
+                    item.name, item.label, item.defName, item.description,
+                    item.category, item.karmaType, item.modSource, item.mod,
+                    ...(Array.isArray(item.stats) ? item.stats : []),
+                    ...(Array.isArray(item.conflicts) ? item.conflicts : []),
+                    item.author || ''
+                ].join(' ').toLowerCase();
+                if (!text.includes(search)) return false;
+            }
+
+            return true;
+        });
+
+        // Re-render
+        const renderName = `render${tabName.charAt(0).toUpperCase() + tabName.slice(1)}`;
+        if (typeof this[renderName] === 'function') {
+            this[renderName]();
+        }
+    }
+
+    // ══════════════════════════════════════════════
     //  HELPERS
     // ══════════════════════════════════════════════
     getUsageTypes(item) {
@@ -559,7 +721,7 @@ class RICSStore {
         }
     }
 
-    // Safe escape that does NOT process RimWorld colors
+    // Safe escape (no HTML processing)
     safeEscape(unsafe) {
         if (typeof unsafe !== 'string') return unsafe || '';
         const div = document.createElement('div');
@@ -567,14 +729,14 @@ class RICSStore {
         return div.innerHTML;
     }
 
-    // Escape that DOES process RimWorld colors (for labels/names)
+    // Escape with RimWorld color processing
     escapeHtml(unsafe) {
         if (typeof unsafe !== 'string') return unsafe || '';
         return this.convertRimWorldColors(unsafe);
     }
 
     // ══════════════════════════════════════════════
-    //  EVENTS (tabs, search, sort)
+    //  EVENT LISTENERS
     // ══════════════════════════════════════════════
     setupEventListeners() {
         // Tab switching
@@ -597,21 +759,29 @@ class RICSStore {
         let debounce;
         input.addEventListener('input', e => {
             clearTimeout(debounce);
-            debounce = setTimeout(() => this.filterTab(tabName, e.target.value), 180);
+            debounce = setTimeout(() => {
+                this.searchTerms[tabName] = e.target.value;
+                // For tabs with chips, use combined filter
+                if (['items', 'events', 'weather', 'traits'].includes(tabName)) {
+                    this.applyFilters(tabName);
+                } else {
+                    // For races/mods, simple search
+                    this.filterTabSimple(tabName, e.target.value);
+                }
+            }, 180);
         });
     }
 
-    filterTab(tabName, searchTerm) {
+    filterTabSimple(tabName, searchTerm) {
         const term = searchTerm.toLowerCase().trim();
         const all = this.data[tabName] || [];
-
         if (!term) {
             this.filteredData[tabName] = [...all];
         } else {
             this.filteredData[tabName] = all.filter(item => {
                 const text = [
                     item.name, item.label, item.defName, item.description,
-                    item.category, item.karmaType, item.modSource, item.mod,
+                    item.category, item.karmaType, item.modSource,
                     ...(Array.isArray(item.stats) ? item.stats : []),
                     ...(Array.isArray(item.conflicts) ? item.conflicts : []),
                     item.author || ''
@@ -619,8 +789,6 @@ class RICSStore {
                 return text.includes(term);
             });
         }
-
-        // Re-render the tab
         const renderName = `render${tabName.charAt(0).toUpperCase() + tabName.slice(1)}`;
         if (typeof this[renderName] === 'function') {
             this[renderName]();

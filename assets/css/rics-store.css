@@ -127,7 +127,6 @@ header {
     backdrop-filter: blur(8px);
 }
 
-/* Top neon line */
 header::before {
     content: "";
     position: absolute; top: 0; left: 0; right: 0; height: 2px;
@@ -140,7 +139,6 @@ header::before {
     50%      { opacity: 1;  }
 }
 
-/* Shimmer */
 header::after {
     content: "";
     position: absolute; inset: 0;
@@ -236,7 +234,6 @@ header h1 {
     50%      { opacity: .5; box-shadow: 0 0 16px var(--neon-green); }
 }
 
-/* Header stats row */
 .header-stats {
     display: flex; justify-content: center; gap: 20px;
     margin-top: 18px; flex-wrap: wrap;
@@ -366,7 +363,7 @@ header h1 {
 
 /* ═══════════════════ SEARCH ═══════════════════ */
 .search-box {
-    position: relative; margin-bottom: 16px;
+    position: relative; margin-bottom: 12px;
 }
 .search-icon {
     position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
@@ -393,6 +390,76 @@ header h1 {
         0 0 0 3px rgba(0,255,163,.1),
         0 0 20px rgba(0,255,163,.08);
     background: rgba(3,7,18,.95);
+}
+
+/* ═══════════════════ FILTER CHIPS ═══════════════════ */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    padding: 4px 0;
+}
+
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
+    color: var(--text-secondary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.filter-chip:hover {
+    background: rgba(0, 255, 163, 0.06);
+    border-color: rgba(0, 255, 163, 0.2);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+}
+
+.filter-chip.active {
+    background: linear-gradient(135deg,
+        rgba(0, 255, 163, 0.18),
+        rgba(0, 229, 255, 0.12));
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+    box-shadow:
+        0 0 12px rgba(0, 255, 163, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    text-shadow: 0 0 6px rgba(0, 255, 163, 0.4);
+}
+
+.filter-chip .chip-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 20px;
+    padding: 0 6px;
+    margin-left: 4px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    transition: all 0.25s;
+}
+
+.filter-chip.active .chip-count {
+    background: rgba(0, 255, 163, 0.2);
+    border-color: rgba(0, 255, 163, 0.35);
+    color: var(--neon-green);
 }
 
 /* ═══════════════════ TABLES ═══════════════════ */
@@ -467,7 +534,7 @@ header h1 {
     color: var(--neon-cyan);
 }
 
-/* Item name inside tables */
+/* Item name */
 .item-name {
     font-weight: 700;
     color: var(--text-primary);
@@ -479,7 +546,6 @@ header h1 {
     text-shadow: 0 0 8px rgba(0,229,255,.25);
 }
 
-/* Metadata below names */
 .metadata {
     display: block;
     margin-top: 5px;
@@ -489,7 +555,6 @@ header h1 {
     line-height: 1.6;
 }
 
-/* Usage tag */
 .usage {
     display: inline-block;
     padding: 2px 8px;
@@ -502,10 +567,8 @@ header h1 {
     letter-spacing: .03em;
 }
 
-/* No-wrap helper */
 .no-wrap { white-space: nowrap; }
 
-/* Strong inside td (prices) */
 .data-table td strong {
     color: var(--neon-green);
     font-family: 'Orbitron', monospace;
@@ -513,7 +576,6 @@ header h1 {
     text-shadow: 0 0 6px rgba(0,255,163,.3);
 }
 
-/* Trait description */
 .trait-description {
     font-size: .88rem;
     color: var(--text-secondary);
@@ -521,8 +583,40 @@ header h1 {
     margin-bottom: 6px;
 }
 
-/* Karma types */
-.karma-good, td:has(> :is(.karma-good)) { }
+/* ═══════════════════ KARMA BADGES ═══════════════════ */
+.karma-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    white-space: nowrap;
+}
+.karma-badge.good {
+    background: rgba(0,255,163,.12);
+    border: 1px solid rgba(0,255,163,.3);
+    color: #00ffa3;
+}
+.karma-badge.bad {
+    background: rgba(255,45,120,.12);
+    border: 1px solid rgba(255,45,120,.3);
+    color: #ff2d78;
+}
+.karma-badge.neutral {
+    background: rgba(255,214,0,.1);
+    border: 1px solid rgba(255,214,0,.25);
+    color: #ffd600;
+}
+.karma-badge.doom {
+    background: rgba(191,90,242,.12);
+    border: 1px solid rgba(191,90,242,.3);
+    color: #bf5af2;
+}
 
 /* ═══════════════════ RACES ═══════════════════ */
 .races-container {
@@ -595,7 +689,6 @@ header h1 {
     color: var(--text-muted); font-size: .9em;
 }
 
-/* Xenotype price */
 .xeno-price {
     color: var(--neon-green);
     font-family: 'Orbitron', monospace;
@@ -689,39 +782,14 @@ footer {
     .tab-icon { font-size: 1.3rem; }
     .data-table { min-width: 520px; }
     .xenotype-item { flex-direction: column; align-items: flex-start; }
-}
 
-/* ═══ KARMA BADGES ═══ */
-.karma-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: .78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    white-space: nowrap;
-}
-.karma-badge.good {
-    background: rgba(0,255,163,.12);
-    border: 1px solid rgba(0,255,163,.3);
-    color: #00ffa3;
-}
-.karma-badge.bad {
-    background: rgba(255,45,120,.12);
-    border: 1px solid rgba(255,45,120,.3);
-    color: #ff2d78;
-}
-.karma-badge.neutral {
-    background: rgba(255,214,0,.1);
-    border: 1px solid rgba(255,214,0,.25);
-    color: #ffd600;
-}
-.karma-badge.doom {
-    background: rgba(191,90,242,.12);
-    border: 1px solid rgba(191,90,242,.3);
-    color: #bf5af2;
+    .filter-bar {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 8px;
+        scrollbar-width: thin;
+    }
+    .filter-chip {
+        flex-shrink: 0;
+    }
 }
