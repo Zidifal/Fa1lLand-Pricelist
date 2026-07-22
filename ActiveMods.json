@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-18T06:59:31.2951578Z",
-  "totalActiveMods": 263,
+  "exportedAt": "2026-07-22T07:37:58.4268335Z",
+  "totalActiveMods": 274,
   "mods": [
     {
       "author": "Captolamia",
@@ -42,7 +42,7 @@
       "author": "Andreas Pardeike",
       "name": "Achtung!",
       "steamId": "730936602",
-      "version": "4.1.11.1"
+      "version": "4.1.12"
     },
     {
       "author": "pashka",
@@ -66,6 +66,18 @@
       "author": "KScav",
       "name": "Alpha Animals Retextured",
       "steamId": "3536598972",
+      "version": null
+    },
+    {
+      "author": "Sarg Bjornson",
+      "name": "Alpha Mechs",
+      "steamId": "2973169158",
+      "version": null
+    },
+    {
+      "author": "Nanamy",
+      "name": "Alpha Mechs (Russian Language)",
+      "steamId": "3354298392",
       "version": null
     },
     {
@@ -147,6 +159,18 @@
       "version": null
     },
     {
+      "author": "miyamiya,  twsta,  vokaerian",
+      "name": "Compressed Raid Continued",
+      "steamId": "3475786927",
+      "version": null
+    },
+    {
+      "author": "Nevelian",
+      "name": "Compressed Raid ru",
+      "steamId": "2919445363",
+      "version": null
+    },
+    {
       "author": "Ludeon Studios",
       "name": "Core",
       "steamId": null,
@@ -201,6 +225,18 @@
       "version": null
     },
     {
+      "author": "Dubwise",
+      "name": "Dubs Performance Analyzer",
+      "steamId": "2038874626",
+      "version": null
+    },
+    {
+      "author": "Marsianso",
+      "name": "Dubs Performance Analyzer Russian Language",
+      "steamId": "3534120421",
+      "version": "1.6.02"
+    },
+    {
       "author": "jaeger972",
       "name": "Faction Territories and Vassalage",
       "steamId": "3626725895",
@@ -210,6 +246,12 @@
       "author": "Sause Walka",
       "name": "Faction Territories and Vassalage | Rus",
       "steamId": "3646957936",
+      "version": null
+    },
+    {
+      "author": "bradson",
+      "name": "Fishery - Modding Library",
+      "steamId": null,
       "version": null
     },
     {
@@ -357,6 +399,24 @@
       "version": null
     },
     {
+      "author": "bradson",
+      "name": "Performance Fish",
+      "steamId": null,
+      "version": null
+    },
+    {
+      "author": "Taranchuk",
+      "name": "Performance Optimizer",
+      "steamId": "2664723367",
+      "version": null
+    },
+    {
+      "author": "Russian translation by ВАЛЕРА (Original: Taranchuk)",
+      "name": "Performance Optimizer - Russian Translation",
+      "steamId": "3539366911",
+      "version": null
+    },
+    {
       "author": "Mehni",
       "name": "Pick Up And Haul",
       "steamId": "1279012058",
@@ -367,6 +427,12 @@
       "name": "Power Tab 2 - 1.6 Bug Fixed Version",
       "steamId": "3528086894",
       "version": "2.0.4"
+    },
+    {
+      "author": "Zetrith",
+      "name": "Prepatcher",
+      "steamId": "2934420800",
+      "version": null
     },
     {
       "author": "Avius, Hazzer",

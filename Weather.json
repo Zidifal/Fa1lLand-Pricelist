@@ -3,8 +3,8 @@
     "DefName": "Clear",
     "Label": "ясно",
     "Description": "Ясный день. Никаких штрафов или бонусов.",
-    "BaseCost": 100,
-    "KarmaType": "Good",
+    "BaseCost": 300,
+    "KarmaType": "Neutral",
     "EventCap": 3,
     "Enabled": true,
     "ModSource": "Core",
@@ -381,6 +381,18 @@
     "Enabled": false,
     "ModSource": "Vanilla Events Expanded",
     "modactive": true,
+    "Version": 1
+  },
+  "BEWH_BloodRain": {
+    "DefName": "BEWH_BloodRain",
+    "Label": "Кровавый Дождь",
+    "Description": "Кровавый дождь снижает точность дальнобойного оружия, гасит огонь, замедляет людей и ухудшает их настроение.",
+    "BaseCost": 600,
+    "KarmaType": "Doom",
+    "EventCap": 3,
+    "Enabled": false,
+    "ModSource": "RimDark 40k - Mankinds Finest",
+    "modactive": false,
     "Version": 1
   }
 }
