@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-11T15:52:11.8190942Z",
-  "totalActiveMods": 256,
+  "exportedAt": "2026-07-22T13:06:32.4694392Z",
+  "totalActiveMods": 274,
   "mods": [
     {
       "author": "Captolamia",
@@ -42,7 +42,7 @@
       "author": "Andreas Pardeike",
       "name": "Achtung!",
       "steamId": "730936602",
-      "version": "4.1.11.1"
+      "version": "4.1.12"
     },
     {
       "author": "pashka",
@@ -66,6 +66,18 @@
       "author": "KScav",
       "name": "Alpha Animals Retextured",
       "steamId": "3536598972",
+      "version": null
+    },
+    {
+      "author": "Sarg Bjornson",
+      "name": "Alpha Mechs",
+      "steamId": "2973169158",
+      "version": null
+    },
+    {
+      "author": "Nanamy",
+      "name": "Alpha Mechs (Russian Language)",
+      "steamId": "3354298392",
       "version": null
     },
     {
@@ -147,6 +159,18 @@
       "version": null
     },
     {
+      "author": "miyamiya,  twsta,  vokaerian",
+      "name": "Compressed Raid Continued",
+      "steamId": "3475786927",
+      "version": null
+    },
+    {
+      "author": "Nevelian",
+      "name": "Compressed Raid ru",
+      "steamId": "2919445363",
+      "version": null
+    },
+    {
       "author": "Ludeon Studios",
       "name": "Core",
       "steamId": null,
@@ -201,6 +225,36 @@
       "version": null
     },
     {
+      "author": "Dubwise",
+      "name": "Dubs Performance Analyzer",
+      "steamId": "2038874626",
+      "version": null
+    },
+    {
+      "author": "Marsianso",
+      "name": "Dubs Performance Analyzer Russian Language",
+      "steamId": "3534120421",
+      "version": "1.6.02"
+    },
+    {
+      "author": "jaeger972",
+      "name": "Faction Territories and Vassalage",
+      "steamId": "3626725895",
+      "version": null
+    },
+    {
+      "author": "Sause Walka",
+      "name": "Faction Territories and Vassalage | Rus",
+      "steamId": "3646957936",
+      "version": null
+    },
+    {
+      "author": "bradson",
+      "name": "Fishery - Modding Library",
+      "steamId": null,
+      "version": null
+    },
+    {
       "author": "ChaoticEnrico",
       "name": "Fog Color Changer",
       "steamId": "3492647454",
@@ -228,6 +282,12 @@
       "author": "AOBA",
       "name": "Fortified Features Framework",
       "steamId": "3498575851",
+      "version": null
+    },
+    {
+      "author": "Matvey24",
+      "name": "FPS Stabilizer",
+      "steamId": "3318922522",
       "version": null
     },
     {
@@ -276,6 +336,12 @@
       "author": "Zylle",
       "name": "Map Designer",
       "steamId": "2111424996",
+      "version": null
+    },
+    {
+      "author": "カタストロフ/NozoMe",
+      "name": "Map Mode Framework",
+      "steamId": "3296654393",
       "version": null
     },
     {
@@ -333,6 +399,24 @@
       "version": null
     },
     {
+      "author": "bradson",
+      "name": "Performance Fish",
+      "steamId": null,
+      "version": null
+    },
+    {
+      "author": "Taranchuk",
+      "name": "Performance Optimizer",
+      "steamId": "2664723367",
+      "version": null
+    },
+    {
+      "author": "Russian translation by ВАЛЕРА (Original: Taranchuk)",
+      "name": "Performance Optimizer - Russian Translation",
+      "steamId": "3539366911",
+      "version": null
+    },
+    {
       "author": "Mehni",
       "name": "Pick Up And Haul",
       "steamId": "1279012058",
@@ -345,6 +429,12 @@
       "version": "2.0.4"
     },
     {
+      "author": "Zetrith",
+      "name": "Prepatcher",
+      "steamId": "2934420800",
+      "version": null
+    },
+    {
       "author": "Avius, Hazzer",
       "name": "Prison Labor",
       "steamId": "1899474310",
@@ -354,7 +444,7 @@
       "author": "Hatti, pkp24",
       "name": "QualityBuilder Unofficial 1.6",
       "steamId": "3512466087",
-      "version": null
+      "version": "1.6.012"
     },
     {
       "author": "The White Crayon (Updated for 1.1 by Ogliss)",
@@ -396,6 +486,12 @@
       "author": "Nevelian",
       "name": "Rim War it pr ge fr sp jp th ua ru",
       "steamId": "2645763762",
+      "version": null
+    },
+    {
+      "author": "Cabbage",
+      "name": "RimCities",
+      "steamId": "1775170117",
       "version": null
     },
     {
@@ -708,7 +804,7 @@
       "author": "OliveWizard",
       "name": "Vanilla Events Expanded Russian Language Pack",
       "steamId": "2141736447",
-      "version": null
+      "version": "16.01"
     },
     {
       "author": "Oskar Potocki,  XeoNovaDan,  Orion,  Kikohi,  Taranchuk,  Sarg Bjornson,  Erdelf",
@@ -1509,6 +1605,12 @@
       "version": null
     },
     {
+      "author": "TSA",
+      "name": "World Domination",
+      "steamId": "3646291383",
+      "version": null
+    },
+    {
       "author": "Imranfish",
       "name": "XML Extensions",
       "steamId": "2574315206",
@@ -1530,6 +1632,12 @@
       "author": "Cas",
       "name": "Русификатор Vanilla Psycasts Expanded",
       "steamId": "3532584557",
+      "version": null
+    },
+    {
+      "author": "Bot_Kerebs",
+      "name": "Русский перевод - World Domination",
+      "steamId": "3681789715",
       "version": null
     },
     {
